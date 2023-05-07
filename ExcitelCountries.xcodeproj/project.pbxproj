@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C89D2582A07AEB200474724 /* ExcitelCountriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C89D2572A07AEB200474724 /* ExcitelCountriesTests.swift */; };
 		8CFD2E052A07835B001B2AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD2E042A07835B001B2AA4 /* AppDelegate.swift */; };
 		8CFD2E072A07835B001B2AA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD2E062A07835B001B2AA4 /* SceneDelegate.swift */; };
-		8CFD2E092A07835B001B2AA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD2E082A07835B001B2AA4 /* ViewController.swift */; };
-		8CFD2E0C2A07835B001B2AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFD2E0A2A07835B001B2AA4 /* Main.storyboard */; };
+		8CFD2E092A07835B001B2AA4 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD2E082A07835B001B2AA4 /* CountriesViewController.swift */; };
+		8CFD2E0C2A07835B001B2AA4 /* Countries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFD2E0A2A07835B001B2AA4 /* Countries.storyboard */; };
 		8CFD2E112A07835F001B2AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFD2E102A07835F001B2AA4 /* Assets.xcassets */; };
 		8CFD2E142A07835F001B2AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFD2E122A07835F001B2AA4 /* LaunchScreen.storyboard */; };
-		8CFD2E1F2A07835F001B2AA4 /* ExcitelCountriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD2E1E2A07835F001B2AA4 /* ExcitelCountriesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,27 +24,19 @@
 			remoteGlobalIDString = 8CFD2E002A07835B001B2AA4;
 			remoteInfo = ExcitelCountries;
 		};
-		8CFD2E252A07835F001B2AA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8CFD2DF92A07835B001B2AA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8CFD2E002A07835B001B2AA4;
-			remoteInfo = ExcitelCountries;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C89D2572A07AEB200474724 /* ExcitelCountriesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcitelCountriesTests.swift; sourceTree = "<group>"; };
 		8CFD2E012A07835B001B2AA4 /* ExcitelCountries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExcitelCountries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CFD2E042A07835B001B2AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CFD2E062A07835B001B2AA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CFD2E082A07835B001B2AA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8CFD2E0B2A07835B001B2AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CFD2E082A07835B001B2AA4 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		8CFD2E0B2A07835B001B2AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Countries.storyboard; sourceTree = "<group>"; };
 		8CFD2E102A07835F001B2AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CFD2E132A07835F001B2AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CFD2E152A07835F001B2AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CFD2E1A2A07835F001B2AA4 /* ExcitelCountriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcitelCountriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CFD2E1E2A07835F001B2AA4 /* ExcitelCountriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcitelCountriesTests.swift; sourceTree = "<group>"; };
-		8CFD2E242A07835F001B2AA4 /* ExcitelCountriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcitelCountriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +48,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8CFD2E172A07835F001B2AA4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8CFD2E212A07835F001B2AA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,7 +71,6 @@
 			children = (
 				8CFD2E012A07835B001B2AA4 /* ExcitelCountries.app */,
 				8CFD2E1A2A07835F001B2AA4 /* ExcitelCountriesTests.xctest */,
-				8CFD2E242A07835F001B2AA4 /* ExcitelCountriesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,8 +80,8 @@
 			children = (
 				8CFD2E042A07835B001B2AA4 /* AppDelegate.swift */,
 				8CFD2E062A07835B001B2AA4 /* SceneDelegate.swift */,
-				8CFD2E082A07835B001B2AA4 /* ViewController.swift */,
-				8CFD2E0A2A07835B001B2AA4 /* Main.storyboard */,
+				8CFD2E082A07835B001B2AA4 /* CountriesViewController.swift */,
+				8CFD2E0A2A07835B001B2AA4 /* Countries.storyboard */,
 				8CFD2E102A07835F001B2AA4 /* Assets.xcassets */,
 				8CFD2E122A07835F001B2AA4 /* LaunchScreen.storyboard */,
 				8CFD2E152A07835F001B2AA4 /* Info.plist */,
@@ -108,7 +92,7 @@
 		8CFD2E1D2A07835F001B2AA4 /* ExcitelCountriesTests */ = {
 			isa = PBXGroup;
 			children = (
-				8CFD2E1E2A07835F001B2AA4 /* ExcitelCountriesTests.swift */,
+				8C89D2572A07AEB200474724 /* ExcitelCountriesTests.swift */,
 			);
 			path = ExcitelCountriesTests;
 			sourceTree = "<group>";
@@ -151,24 +135,6 @@
 			productReference = 8CFD2E1A2A07835F001B2AA4 /* ExcitelCountriesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8CFD2E232A07835F001B2AA4 /* ExcitelCountriesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8CFD2E342A07835F001B2AA4 /* Build configuration list for PBXNativeTarget "ExcitelCountriesUITests" */;
-			buildPhases = (
-				8CFD2E202A07835F001B2AA4 /* Sources */,
-				8CFD2E212A07835F001B2AA4 /* Frameworks */,
-				8CFD2E222A07835F001B2AA4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8CFD2E262A07835F001B2AA4 /* PBXTargetDependency */,
-			);
-			name = ExcitelCountriesUITests;
-			productName = ExcitelCountriesUITests;
-			productReference = 8CFD2E242A07835F001B2AA4 /* ExcitelCountriesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,10 +149,6 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					8CFD2E192A07835F001B2AA4 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 8CFD2E002A07835B001B2AA4;
-					};
-					8CFD2E232A07835F001B2AA4 = {
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = 8CFD2E002A07835B001B2AA4;
 					};
@@ -207,7 +169,6 @@
 			targets = (
 				8CFD2E002A07835B001B2AA4 /* ExcitelCountries */,
 				8CFD2E192A07835F001B2AA4 /* ExcitelCountriesTests */,
-				8CFD2E232A07835F001B2AA4 /* ExcitelCountriesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,18 +180,11 @@
 			files = (
 				8CFD2E142A07835F001B2AA4 /* LaunchScreen.storyboard in Resources */,
 				8CFD2E112A07835F001B2AA4 /* Assets.xcassets in Resources */,
-				8CFD2E0C2A07835B001B2AA4 /* Main.storyboard in Resources */,
+				8CFD2E0C2A07835B001B2AA4 /* Countries.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8CFD2E182A07835F001B2AA4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8CFD2E222A07835F001B2AA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -244,7 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CFD2E092A07835B001B2AA4 /* ViewController.swift in Sources */,
+				8CFD2E092A07835B001B2AA4 /* CountriesViewController.swift in Sources */,
 				8CFD2E052A07835B001B2AA4 /* AppDelegate.swift in Sources */,
 				8CFD2E072A07835B001B2AA4 /* SceneDelegate.swift in Sources */,
 			);
@@ -254,14 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CFD2E1F2A07835F001B2AA4 /* ExcitelCountriesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8CFD2E202A07835F001B2AA4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8C89D2582A07AEB200474724 /* ExcitelCountriesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,20 +220,15 @@
 			target = 8CFD2E002A07835B001B2AA4 /* ExcitelCountries */;
 			targetProxy = 8CFD2E1B2A07835F001B2AA4 /* PBXContainerItemProxy */;
 		};
-		8CFD2E262A07835F001B2AA4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8CFD2E002A07835B001B2AA4 /* ExcitelCountries */;
-			targetProxy = 8CFD2E252A07835F001B2AA4 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8CFD2E0A2A07835B001B2AA4 /* Main.storyboard */ = {
+		8CFD2E0A2A07835B001B2AA4 /* Countries.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8CFD2E0B2A07835B001B2AA4 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Countries.storyboard;
 			sourceTree = "<group>";
 		};
 		8CFD2E122A07835F001B2AA4 /* LaunchScreen.storyboard */ = {
@@ -425,10 +367,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExcitelCountries/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Countries.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,10 +395,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExcitelCountries/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Countries.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,42 +452,6 @@
 			};
 			name = Release;
 		};
-		8CFD2E352A07835F001B2AA4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 27Z9MJ7PUR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.excitel.ExcitelCountriesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ExcitelCountries;
-			};
-			name = Debug;
-		};
-		8CFD2E362A07835F001B2AA4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 27Z9MJ7PUR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.excitel.ExcitelCountriesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ExcitelCountries;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,15 +478,6 @@
 			buildConfigurations = (
 				8CFD2E322A07835F001B2AA4 /* Debug */,
 				8CFD2E332A07835F001B2AA4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8CFD2E342A07835F001B2AA4 /* Build configuration list for PBXNativeTarget "ExcitelCountriesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8CFD2E352A07835F001B2AA4 /* Debug */,
-				8CFD2E362A07835F001B2AA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
