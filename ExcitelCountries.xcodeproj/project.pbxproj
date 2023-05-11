@@ -14,6 +14,8 @@
 		8C43DC3C2A08ED980062F253 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43DC3B2A08ED980062F253 /* CountryTableViewCell.swift */; };
 		8C43DC3E2A08EED30062F253 /* CountryTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43DC3D2A08EED30062F253 /* CountryTableViewCellViewModel.swift */; };
 		8C43DC402A08FC1F0062F253 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43DC3F2A08FC1F0062F253 /* ImageProvider.swift */; };
+		8C5A8DCD2A0B74F500660C47 /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A8DCC2A0B74F500660C47 /* CountryDetailsViewController.swift */; };
+		8C5A8DCF2A0B750200660C47 /* CountryDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5A8DCE2A0B750200660C47 /* CountryDetails.storyboard */; };
 		8C89D2582A07AEB200474724 /* ExcitelCountriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C89D2572A07AEB200474724 /* ExcitelCountriesTests.swift */; };
 		8CFD2E052A07835B001B2AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD2E042A07835B001B2AA4 /* AppDelegate.swift */; };
 		8CFD2E072A07835B001B2AA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD2E062A07835B001B2AA4 /* SceneDelegate.swift */; };
@@ -41,6 +43,8 @@
 		8C43DC3B2A08ED980062F253 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		8C43DC3D2A08EED30062F253 /* CountryTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		8C43DC3F2A08FC1F0062F253 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		8C5A8DCC2A0B74F500660C47 /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
+		8C5A8DCE2A0B750200660C47 /* CountryDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountryDetails.storyboard; sourceTree = "<group>"; };
 		8C89D2572A07AEB200474724 /* ExcitelCountriesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcitelCountriesTests.swift; sourceTree = "<group>"; };
 		8CFD2E012A07835B001B2AA4 /* ExcitelCountries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExcitelCountries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CFD2E042A07835B001B2AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,10 +78,8 @@
 		8C43DC2E2A07D0130062F253 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8CFD2E082A07835B001B2AA4 /* CountriesViewController.swift */,
-				8CFD2E0A2A07835B001B2AA4 /* Countries.storyboard */,
-				8C43DC392A0808200062F253 /* CountriesViewModel.swift */,
-				8C43DC412A0A2A970062F253 /* CountryTableViewCell */,
+				8C5A8DCB2A0B74C800660C47 /* CountryDetails */,
+				8C5A8DCA2A0B749B00660C47 /* CountryList */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +109,26 @@
 				8C43DC3B2A08ED980062F253 /* CountryTableViewCell.swift */,
 			);
 			path = CountryTableViewCell;
+			sourceTree = "<group>";
+		};
+		8C5A8DCA2A0B749B00660C47 /* CountryList */ = {
+			isa = PBXGroup;
+			children = (
+				8CFD2E082A07835B001B2AA4 /* CountriesViewController.swift */,
+				8CFD2E0A2A07835B001B2AA4 /* Countries.storyboard */,
+				8C43DC392A0808200062F253 /* CountriesViewModel.swift */,
+				8C43DC412A0A2A970062F253 /* CountryTableViewCell */,
+			);
+			path = CountryList;
+			sourceTree = "<group>";
+		};
+		8C5A8DCB2A0B74C800660C47 /* CountryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A8DCC2A0B74F500660C47 /* CountryDetailsViewController.swift */,
+				8C5A8DCE2A0B750200660C47 /* CountryDetails.storyboard */,
+			);
+			path = CountryDetails;
 			sourceTree = "<group>";
 		};
 		8CFD2DF82A07835B001B2AA4 = {
@@ -233,6 +255,7 @@
 			files = (
 				8CFD2E142A07835F001B2AA4 /* LaunchScreen.storyboard in Resources */,
 				8CFD2E112A07835F001B2AA4 /* Assets.xcassets in Resources */,
+				8C5A8DCF2A0B750200660C47 /* CountryDetails.storyboard in Resources */,
 				8CFD2E0C2A07835B001B2AA4 /* Countries.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +280,7 @@
 				8C43DC362A07E3840062F253 /* CountriesProvider.swift in Sources */,
 				8C43DC342A07D6860062F253 /* HTTPClient.swift in Sources */,
 				8C43DC3A2A0808200062F253 /* CountriesViewModel.swift in Sources */,
+				8C5A8DCD2A0B74F500660C47 /* CountryDetailsViewController.swift in Sources */,
 				8CFD2E092A07835B001B2AA4 /* CountriesViewController.swift in Sources */,
 				8CFD2E052A07835B001B2AA4 /* AppDelegate.swift in Sources */,
 				8CFD2E072A07835B001B2AA4 /* SceneDelegate.swift in Sources */,
