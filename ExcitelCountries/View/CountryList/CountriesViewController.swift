@@ -35,10 +35,6 @@ extension CountriesViewController: UITableViewDelegate, UITableViewDataSource {
         cell?.viewModel = cellViewModel
         return cell ?? UITableViewCell()
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
-    }
 }
 
 extension CountriesViewController {
