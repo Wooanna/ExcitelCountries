@@ -129,6 +129,7 @@
                     <connections>
                         <outlet property="loadingIndicator" destination="XAf-P3-eYf" id="rWo-KC-tj1"/>
                         <outlet property="noResults" destination="1gp-X6-38g" id="MiQ-aL-bP1"/>
+                        <outlet property="searchBar" destination="JPO-8g-gmB" id="A0Q-Il-I4e"/>
                         <outlet property="tableView" destination="YLL-1X-G3S" id="KMK-HD-c93"/>
                     </connections>
                 </viewController>

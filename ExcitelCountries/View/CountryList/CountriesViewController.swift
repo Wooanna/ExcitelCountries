@@ -14,8 +14,9 @@ class CountriesViewController: UIViewController {
     var subscribers = Set<AnyCancellable>()
     
     @IBOutlet weak private var loadingIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak private var noResults: UIImageView!
+    @IBOutlet weak internal var tableView: UITableView!
+    @IBOutlet weak internal var noResults: UIImageView!
+    @IBOutlet weak internal var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()

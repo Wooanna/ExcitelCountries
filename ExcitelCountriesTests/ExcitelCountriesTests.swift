@@ -22,6 +22,27 @@ final class ExcitelCountriesTests: XCTestCase {
         XCTAssertNotNil(sut.tableView.delegate)
     }
     
+    func test_shows_noResult_image() throws {
+        let sut = try makeSUT()
+        sut.loadViewIfNeeded()
+        
+        sut.searchBar(sut.searchBar, textDidChange: "asdnjak")
+        
+        XCTAssertFalse(sut.noResults.isHidden)
+    }
+    
+    func test_searches_after_minCountLetters() throws {
+        let sut = try makeSUT()
+        sut.loadViewIfNeeded()
+        
+        sut.searchBar(sut.searchBar, textDidChange: "as")
+        sut.searchBar.text = "aa"
+        let filteredCount = sut.viewModel?.filteredItems.count
+        let allCount = sut.viewModel?.items.count
+
+        XCTAssertEqual(filteredCount, allCount)
+    }
+    
     private func makeSUT() throws -> CountriesViewController {
         let countriesStoryboard = UIStoryboard(name: StoryboardName.countries.rawValue, bundle: Bundle(for: CountriesViewController.self))
         let navigation = countriesStoryboard.instantiateInitialViewController() as? UINavigationController
