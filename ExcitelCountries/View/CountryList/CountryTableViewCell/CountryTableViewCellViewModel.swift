@@ -28,10 +28,10 @@ class CountryTableViewCellViewModel {
         
         guard let url = country.pngFlagUrl else { return }
         
-        ImageProvider(client: URLSession.shared).getImage(forUrl: url)
+        ImageProvider(client: URLSession.shared).getImage(url: url)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
-                    //TODO: hadle error
+             
             }, receiveValue: { [weak self] image in
                 guard let self,
                       let image else { return }

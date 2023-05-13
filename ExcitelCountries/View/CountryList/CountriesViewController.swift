@@ -14,11 +14,13 @@ class CountriesViewController: UIViewController {
     var subscribers = Set<AnyCancellable>()
     
     @IBOutlet weak private var loadingIndicator: UIActivityIndicatorView!
-    @IBOutlet weak private var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak private var noResults: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = CountriesViewModel(countriesService: CountriesProvider(client: URLSession(configuration: URLSessionConfiguration.default)))
+        viewModel = CountriesViewModel(countriesService: CountriesProvider(client: URLSession.shared))
+        tableView.keyboardDismissMode = .onDrag
         bindViewModel()
     }
 }
@@ -29,11 +31,18 @@ extension CountriesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CountryTableViewCell", for: indexPath) as? CountryTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CountryTableViewCell.identifier, for: indexPath) as? CountryTableViewCell
         guard let country = viewModel?.filteredItems[indexPath.row] else { return UITableViewCell() }
         let cellViewModel = CountryTableViewCellViewModel(withCountry: country)
         cell?.viewModel = cellViewModel
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let mapViewController = UIStoryboard(name: StoryboardName.map.rawValue, bundle: Bundle.main).instantiateInitialViewController() as? MapViewController else { return }
+        guard let country = viewModel?.filteredItems[indexPath.row] else { return }
+        mapViewController.viewModel = MapViewModel(country: country)
+        navigationController?.pushViewController(mapViewController, animated: true)
     }
 }
 
@@ -55,11 +64,13 @@ extension CountriesViewController: UISearchBarDelegate {
             viewModel?.resetItems()
         }
         
-        guard searchText.count >= 3, let items = viewModel?.items else { return }
+        guard searchText.count >= Constants.CountryViewController.minSearchTextCount,
+                let items = viewModel?.items else { return }
         
         viewModel?.filteredItems = items.filter { (item: Country) -> Bool in
             return item.name?.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
         }
+        noResults.isHidden = viewModel?.filteredItems.count ?? 0 > 0 ? true : false
         tableView.reloadData()
     }
 }

@@ -45,8 +45,16 @@ extension Country {
         return components.url
     }
     
-    var latitude: CLLocation? {
+    var location: CLLocation? {
         guard let coordinates = latLng, coordinates.count == 2 else { return nil }
         return CLLocation(latitude: coordinates[0], longitude: coordinates[1])
+    }
+    
+    var presentableRegion: String {
+        "\(region ?? ""), \(subregion ?? "")"
+    }
+    
+    var presentablePopulation: String {
+        "Population: \(population)"
     }
 }

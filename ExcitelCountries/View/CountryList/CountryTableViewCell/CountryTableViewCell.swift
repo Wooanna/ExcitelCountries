@@ -11,6 +11,8 @@ import Combine
 
 class CountryTableViewCell: UITableViewCell {
     
+    static let identifier = "CountryTableViewCell"
+    
     @IBOutlet weak private var population: UILabel!
     @IBOutlet weak private var countryName: UILabel!
     @IBOutlet weak private var flagImage: UIImageView!

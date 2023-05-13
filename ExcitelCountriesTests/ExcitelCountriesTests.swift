@@ -17,13 +17,15 @@ final class ExcitelCountriesTests: XCTestCase {
     func test_tableView_configured() throws {
         let sut = try makeSUT()
         sut.loadViewIfNeeded()
+        
         XCTAssertNotNil(sut.tableView.dataSource)
         XCTAssertNotNil(sut.tableView.delegate)
     }
     
     private func makeSUT() throws -> CountriesViewController {
-        let countriesStoryboard = UIStoryboard(name: "Countries", bundle: Bundle(for: CountriesViewController.self))
-        let initialVC = countriesStoryboard.instantiateInitialViewController()
+        let countriesStoryboard = UIStoryboard(name: StoryboardName.countries.rawValue, bundle: Bundle(for: CountriesViewController.self))
+        let navigation = countriesStoryboard.instantiateInitialViewController() as? UINavigationController
+        let initialVC = navigation?.topViewController
         
         return try XCTUnwrap(initialVC as? CountriesViewController)
     }

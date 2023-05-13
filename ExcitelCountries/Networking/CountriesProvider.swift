@@ -15,29 +15,21 @@ enum CountriesError: Error {
 class CountriesProvider {
     
     let client: HTTPClient
-    let baseUrl = "https://excitel-countries.azurewebsites.net/"
-    let endPoint = "countries"
     
     init(client: HTTPClient) {
         self.client = client
     }
     
     func getAllCountries() -> AnyPublisher<[Country], Error> {
-        guard let url = URL(string: baseUrl + endPoint) else {
-            return Fail(error: CountriesError.invalidUrl(message: "Invalid requestUrl")).eraseToAnyPublisher()
-        }
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        return client.publisher(request: request)
+        let countriesRequest = CountriesRequest(method: .get, path: "countries")
+        return client.publisher(request: countriesRequest)
             .tryMap(CountryListMapper.map)
             .eraseToAnyPublisher()
-
     }
 }
 
 struct CountryListMapper {
     static func map(data: Data, response: HTTPURLResponse) throws -> [Country] {
-        //TODO: catch/show error check response
         return try JSONDecoder().decode([Country].self, from: data)
     }
 }

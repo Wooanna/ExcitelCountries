@@ -11,13 +11,14 @@ import UIKit
 
 class ImageProvider {
     let client: HTTPClient
-    
+
     init(client: HTTPClient) {
         self.client = client
     }
     
-    func getImage(forUrl url: URL) -> AnyPublisher<UIImage?, Error> {
-        client.publisher(request: URLRequest(url: url))
+    func getImage(url: URL) -> AnyPublisher<UIImage?, Error> {
+        let imageRequest = ImageRequest(method: .get, url: url)
+        return client.publisher(request: imageRequest)
             .tryMap(ImageMapper.map)
             .eraseToAnyPublisher()
     }
@@ -25,8 +26,6 @@ class ImageProvider {
 
 struct ImageMapper {
     static func map(data: Data, response: HTTPURLResponse) throws -> UIImage? {
-        //TODO: catch/show error check response
-
         return UIImage(data: data)
     }
 }

@@ -25,8 +25,8 @@ class CountriesViewModel {
     private func bindCountriesService() {
         countriesService.getAllCountries()
             .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { (error) in
-                //TODO: show error/stop loading
+            .sink(receiveCompletion: { completion in
+                //TODO: handle error, show user no internet error, generic error etc.
             }, receiveValue: { [weak self] countries in
                 guard let self = self else { return }
                 self.items = countries.sorted(by: { $0.population > $1.population })
